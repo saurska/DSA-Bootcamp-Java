@@ -10,7 +10,12 @@ public class GCD_LCM {
         if (a == 0) {
             return b;
         }
+        if(b ==0)
+            return a;
+        if(b>a)
         return gcd(b%a, a);
+
+        return gcd(a%b,a);
     }
 
     static int lcm(int a, int b) {
